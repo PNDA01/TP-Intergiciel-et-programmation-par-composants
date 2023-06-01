@@ -15,7 +15,7 @@ wt -w 0 -d $Env:KAFKA_HOME\bin\windows pwsh -NoExit { .\zookeeper-server-start.b
 Start-Sleep -Seconds 2
 
 # lancement du BROKER
-wt -w 0 -d $Env:KAFKA_HOME\bin\windows pwsh -NoExit { .\kafka-server-start.bat ..\..\config\server_sasl.properties }
+wt -w 0 -d $Env:KAFKA_HOME\bin\windows pwsh -NoExit { .\kafka-server-start.bat ..\..\config\server.properties }
 # attente 2 secondes
 Start-Sleep -Seconds 2
 
